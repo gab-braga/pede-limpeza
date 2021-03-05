@@ -17,6 +17,27 @@ body {
     min-width: 100vw;
 }
 
+footer {
+    width: 100vw;
+    height: 10rem;
+    background-color: #004AAD;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer span {
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+footer span a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 550;
+}
+
 header {
     height: 100vh;
     width: 100vw;
@@ -53,8 +74,9 @@ header .box-logo img {
     margin-bottom: 2rem;
 }
 
-header p {
+header h1 {
     font-family: 'Varela Round', sans-serif;
+    font-weight: normal;
     font-size: 4.2rem;
     text-align: center;
     color: #FFFFFF;
@@ -62,6 +84,14 @@ header p {
 
 main {
     min-width: 100vw;
+}
+
+main #message {
+    padding: 4rem 4rem 0;
+    font-size: 3rem;
+    font-family: 'Varela Round', sans-serif;
+    color: #004AAD;
+    text-align: center;
 }
 
 .box-samples {
@@ -118,22 +148,23 @@ main {
 }
 .box-form #button {
     margin-top: 4rem;
-    width: 80vw;
+    width: 100%;
     height: 6rem;
     padding: auto 4rem auto 4rem;
+    text-decoration: none;
     background-color: #3CDC8C;
     border: none;
     border-radius: 1.2rem;
 
-    text-decoration: none;
-    cursor: pointer;
-    font-family: 'Varela Round', sans-serif;
-    color: #FFFFFF;
-    font-size: 3rem;
-
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box-form #button span {
+    font-family: 'Varela Round', sans-serif;
+    color: #FFFFFF;
+    font-size: 3rem;
 }
 
 .box-form #button img {
