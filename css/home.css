@@ -9,6 +9,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-width: 100vw;
 }
@@ -21,12 +25,19 @@ header {
     background-color: #004AAD;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+header a img {
+    width: 50px;
+    height: 50px;
+    margin-top: 4rem;
+}
+
 header .box-logo {
-    height: 60vh;
+    height: auto;
     width: 100vw;
     padding: 0 2rem;
 
@@ -36,7 +47,7 @@ header .box-logo {
     justify-content: center;
 }
 
-header img {
+header .box-logo img {
     width: 80vw;
     display: block;
     margin-bottom: 2rem;
@@ -63,8 +74,8 @@ main {
 }
 
 .box-samples section {
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
     border: 2px solid #004AAD;
     border-radius: 1.5rem;
     cursor: pointer;
@@ -81,14 +92,21 @@ main {
 }
 
 .box-samples section img {
-    width: 15rem;
+    width: 17rem;
+}
+
+.box-samples section p,
+.box-samples section small {
+    margin-top: 0.8rem;
 }
 
 .box-samples section p {
     font-size: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
-.box-samples section p small {
+.box-samples section strong {
     font-size: 1.5rem;
 }
 
@@ -99,8 +117,9 @@ main {
     padding: 4rem;
 }
 .box-form #button {
+    margin-top: 4rem;
     width: 80vw;
-    height: 5rem;
+    height: 6rem;
     padding: auto 4rem auto 4rem;
     background-color: #3CDC8C;
     border: none;
@@ -119,5 +138,39 @@ main {
 
 .box-form #button img {
     width: 3rem;
-    margin-left: 4rem;
+    margin-left: 2rem;
+}
+
+.box-form .box-input {
+    display: block;
+}
+
+.box-form .box-input input,
+.box-form .box-input textarea {
+    font-size: 1.5rem;
+    display: block;
+    width: 100%;
+    border: 1px solid #004AAD;
+    border-radius: 1.5rem;
+    padding: 0.8rem;
+}
+
+.box-form .box-input textarea {
+    resize: vertical;
+    min-height: 5rem;
+    height: 10rem;
+    max-height: 20rem;
+}
+
+.box-form .box-input input {
+    height: 5rem;
+}
+
+.box-form .box-input + .box-input {
+    margin-top: 4rem;
+}
+
+.box-form .box-input label {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2rem;
 }
