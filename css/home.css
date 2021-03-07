@@ -23,16 +23,19 @@ main {
 }
 
 main #message {
-    padding: 4rem 4rem;
+    padding: 4rem;
     font-size: 3rem;
     font-family: 'Varela Round', sans-serif;
     color: #004AAD;
     text-align: center;
 }
 
+main section + #message {
+    margin-top: 4rem;
+}
+
 .box-samples {
     width: 100%;
-
     display: grid;
     gap: 4rem;
     grid-template-columns: 1fr;
@@ -41,34 +44,43 @@ main #message {
 
 .box-samples .grid-item {
     width: 25rem;
+    height: 31rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+
+    background-color: #004AAD;
+    color: #FFFFFF;
+}
+
+.box-samples .grid-item .box-image {
+    width: 100%;
     height: 25rem;
     border: 2px solid #004AAD;
     border-radius: 1.5rem;
-    cursor: pointer;
     overflow: hidden;
+}
+
+.box-samples .grid-item .box-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.box-samples .grid-item .box-info-sample {
+    width: 100%;
+    height: 6rem;
+    padding: 0.8rem 2rem;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
 }
 
-.box-samples .grid-item img {
-    width: 17rem;
-}
-
-.box-samples .grid-item p,
-.box-samples .grid-itemn small {
-    margin-top: 0.8rem;
-}
-
-.box-samples .grid-item p {
+.box-samples .grid-item .box-info-sample p {
     font-size: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
 }
 
-.box-samples .grid-item strong {
+.box-samples .grid-item .box-info-sample strong {
     font-size: 1.5rem;
 }
 
