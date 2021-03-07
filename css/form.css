@@ -4,31 +4,6 @@
     flex-direction: column;
     padding: 4rem;
 }
-.box-form #button {
-    margin-top: 4rem;
-    width: 100%;
-    height: 6rem;
-    padding: auto 4rem auto 4rem;
-    text-decoration: none;
-    background-color: #3CDC8C;
-    border: none;
-    border-radius: 1.2rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.box-form #button span {
-    font-family: 'Varela Round', sans-serif;
-    color: #FFFFFF;
-    font-size: 3rem;
-}
-
-.box-form #button img {
-    width: 3rem;
-    margin-left: 2rem;
-}
 
 .box-form .box-input {
     display: block;
@@ -42,6 +17,13 @@
     border: 1px solid #004AAD;
     border-radius: 1.5rem;
     padding: 0.8rem;
+}
+
+.box-form .box-input input:focus,
+.box-form .box-input textarea:focus {
+    box-shadow: 0 0 0 0;
+    border-width: 2px;
+    outline: 0;
 }
 
 .box-form .box-input textarea {
@@ -62,4 +44,44 @@
 .box-form .box-input label {
     font-family: 'Varela Round', sans-serif;
     font-size: 2rem;
+}
+
+.box-form #button {
+    margin-top: 4rem;
+    width: 100%;
+    height: 6rem;
+    padding: auto 4rem auto 4rem;
+    text-decoration: none;
+    background-color: #3CDC8C;
+    border: none;
+    border-radius: 1.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background;
+    transition-duration: 250ms;
+}
+
+.box-form #button:hover {
+    background-color: #33b976;
+}
+
+.box-form #button span {
+    font-family: 'Varela Round', sans-serif;
+    color: #FFFFFF;
+    font-size: 3rem;
+}
+
+.box-form #button img {
+    width: 3rem;
+    margin-left: 2rem;
+}
+
+@media(min-width: 660px) {
+    .box-form {
+        width: 600px;
+        margin: 0 auto;
+    }
 }
