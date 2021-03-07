@@ -1,0 +1,20 @@
+footer {
+    width: 100%;
+    height: 10rem;
+    background-color: #004AAD;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer span {
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+footer span a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 550;
+}
