@@ -43,8 +43,8 @@ main section + #message {
 }
 
 .box-samples .grid-item {
-    width: 25rem;
-    height: 31rem;
+    width: 20rem;
+    height: 26rem;
     border-radius: 1.5rem;
     cursor: pointer;
 
@@ -54,7 +54,7 @@ main section + #message {
 
 .box-samples .grid-item .box-image {
     width: 100%;
-    height: 25rem;
+    height: 20rem;
     border: 2px solid #004AAD;
     border-radius: 1.5rem;
     overflow: hidden;
@@ -84,13 +84,13 @@ main section + #message {
     font-size: 1.5rem;
 }
 
-@media(min-width: 700px) {
+@media(min-width: 650px) {
     .box-samples {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media(min-width: 1050px) {
+@media(min-width: 1000px) {
     .box-samples {
         grid-template-columns: 1fr 1fr 1fr;
     }
