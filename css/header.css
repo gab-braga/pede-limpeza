@@ -40,12 +40,13 @@ header h1 {
     color: #FFFFFF;
 }
 
-@media(min-width: 1024px) {header {
+@media(min-width: 1024px), (orientation: landscape) {
+    header {
         height: 15rem;
     }
     
     header .box-logo {
-        height: 20rem;
+        height: 15rem;
         width: 100%;
         padding: 0 6rem;
     
@@ -56,7 +57,7 @@ header h1 {
     }
 
     header .box-logo img {
-        height: 12rem;
+        height: 10rem;
         width: auto;
         display: block;
         margin-bottom: 0;
@@ -71,7 +72,7 @@ header h1 {
     }
 }
 
-@media(min-width: 1400px) {
+@media (min-width: 1400px) {
     header .box-logo {
         width: 1300px;
         margin: 0 auto;
