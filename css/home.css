@@ -30,6 +30,31 @@ main #message {
     text-align: center;
 }
 
+main .box-filter {
+    width: 80vw;
+    height: 5rem;
+    display: block;
+    margin: 0 auto 4rem;
+    padding: 0.5rem 1rem;
+
+    border: 1px solid #004AAD;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(../images/bottom-arrow.svg) no-repeat center right #FFFFFF;
+    background-size: 3rem;
+    color: #004AAD;
+}
+
+main .box-filter:focus,
+main .box-filter option:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
 main section + #message {
     margin-top: 4rem;
 }
@@ -121,6 +146,12 @@ main section + #message {
 
 .box-samples .grid-item #back img {
     width: 3rem;
+}
+
+@media(min-width: 430px) {
+    main .box-filter {
+        width: 36rem;
+    }
 }
 
 @media(min-width: 650px) {
