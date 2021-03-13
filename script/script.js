@@ -4,6 +4,26 @@ let shopping_cart = []
 const phone = "558899951396"
 let link = "https://api.whatsapp.com/send?phone=558899951396&text=Ola%20Gabriel%0AQuero%20fazer%20meu%20pedido"
 
+function filter(event) {
+    const elementOption = event.currentTarget
+    const option = elementOption.value
+
+    const arrayItems = document.querySelectorAll('.box-info-sample')
+            console.log(arrayItems.length)
+
+    for(let i = 0; i < arrayItems.length; i++) {
+        if(option === 'default') {
+            arrayItems[i].parentElement.style.display = "block"
+        }
+        else if(option === arrayItems[i].id) {
+            arrayItems[i].parentElement.style.display = "block"
+        }
+        else {
+            arrayItems[i].parentElement.style.display = "none"
+        }
+    }
+}
+
 function generate_order() {
 
         //const name = elementName.innerText
