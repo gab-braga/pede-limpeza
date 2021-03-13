@@ -44,7 +44,7 @@ main .box-filter {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background: url(../images/bottom-arrow.svg) no-repeat center right #FFFFFF;
+    background: url(../images/filter-icon.svg) no-repeat center right #FFFFFF;
     background-size: 3rem;
     color: #004AAD;
 }

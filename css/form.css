@@ -81,7 +81,7 @@
 
 @media(min-width: 660px) {
     .box-form {
-        width: 600px;
+        width: 60rem;
         margin: 0 auto;
     }
 }

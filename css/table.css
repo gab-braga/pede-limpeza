@@ -1,0 +1,49 @@
+.box-table {
+    width: 100%;
+    padding: 4rem 4rem 0;
+    margin: 0 auto;
+}
+    
+.box-table .box-info-order {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #004AAD;
+    border-radius: 1.5rem;
+    padding: 1rem 0.7rem;
+    font-size: 1.1rem;
+}
+
+.box-table .box-info-order table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.box-table .box-info-order table thead th {
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.box-table .box-info-order table tbody td {
+    padding: 0.7rem 0;
+}
+
+.box-table .box-info-order table tbody tr {
+    border-top: 1px solid #004AAD;
+}
+
+.box-table .box-info-order table tbody tr:last-child {
+    border-bottom: 1px solid #004AAD;
+}
+
+.box-table .box-info-order table tfoot th {
+    padding-top: 1rem;
+    text-align: left;
+}
+
+@media(min-width: 660px) {
+    .box-table {
+        width: 60rem;
+    }
+}

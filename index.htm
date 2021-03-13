@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/table.css">
 </head>
 <body>
     <header>
@@ -33,7 +34,7 @@
             Selecione os produtos para fazer seu pedido
         </h2>
         <select class="box-filter" onchange="filter(event)">
-            <option value="default">Filtro</option>
+            <option value="default">Todos</option>
             <option value="detergente">Detergente</option>
             <option value="amaciante">Amaciante</option>
             <option value="alvejante">Alvejante</option>
@@ -214,6 +215,49 @@
                 </div>
             </div>
         </section>
+
+        <div class="box-table">
+            <div class="box-info-order">
+                <table>
+                    <colgroup>
+                        <col style="width:30%">
+                        <col style="width:45%">
+                        <col style="width:25%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Quantidade</th>
+                            <th>Descrição</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td>Alvejante</td>
+                            <td>R$ 200,00</td>
+                        </tr>
+    
+                        <tr>
+                            <td>2</td>
+                            <td>Pano de Chão</td>
+                            <td>R$ 200,00</td>
+                        </tr>
+    
+                        <tr>
+                            <td>2</td>
+                            <td>Detergente</td>
+                            <td>R$ 200,00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <th>Total</th>
+                        <th>R$ 4016,00</th>
+                    </tfoot>
+    
+                </table>
+            </div>
+        </div>
 
         <h2 id="message">
             Agora precisamos saber seu nome e seu endereço
