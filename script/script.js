@@ -1,23 +1,45 @@
 
+function validate_form(items, name, address) {
+    let flag = false// target="_blank"
+    if(items.length === 0) {
+        alert("Selecione os produtos para fazer seu pedido")
+    }
+    else if(name.length === 0 || address.length === 0) {
+        alert("Preencha seu nome e seu endereço")
+    }
+    else {
+        flag = true
+    }
+    return flag
+}
 
 function generate_order() {
-    const phone = '558899951396'
-    const space = '%20'
-    const enter = '%0A'
-    let link = `https://api.whatsapp.com/send?phone=${phone}&text=Olá, meu pedido de hoje é:${enter}`
-
+    const inputName = document.querySelector('.box-form .box-input #name')
+    const inputAddress = document.querySelector('.box-form .box-input #address')
+    const name = inputName.value
+    const address = inputAddress.value
     const items = document.querySelectorAll(".box-info-order table tbody tr")
-    for(let i = 0; i < items.length; i++) {
-        const quantity = items[i].children[0].innerText
-        const description = items[i].children[1].innerText
-        let item = `* ${quantity} | ${description}${enter}`
-        link += item
-    }
-    const total = `Total: R$ ${calculate_total()}`
-    link += total
 
-    const elementButton = document.querySelector('#button')
-    elementButton.href = link
+    if(validate_form(items, name, address)) {
+        const phone = '558899951396'
+        const space = '%20'
+        const enter = '%0A'
+        let link = `https://api.whatsapp.com/send?phone=${phone}&text=Olá, meu pedido de hoje é:`
+
+        for(let i = 0; i < items.length; i++) {
+            const quantity = items[i].children[0].innerText
+            const description = items[i].children[1].innerText
+            let item = `${enter}* ${quantity} | ${description}`
+            link += item
+        }
+        const total = `Total: R$ ${calculate_total()}`
+        link += `${enter}${total}`
+        link += `${enter}Nome: ${name}`
+        link += `${enter}Endereço: ${address}`
+
+        const elementButton = document.querySelector('#button')
+        elementButton.href = link
+    }
 }
 
 function calculate_total() {
