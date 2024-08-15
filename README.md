@@ -8,7 +8,7 @@ Para diminuir tempo e esforços a Pede Limpeza realiza os pedidos por meio de um
 os produtos assim como a quantidade dos mesmos através de simples cliques, e um botão que redireciona a página para o WhatsApp com
 uma mensagem pronta com todas as informações do pedido realizado pelo cliente. Para facilitar a busca ele possui também um mecanismo de filtragem dos produtos.
 Pede Limpeza é uma aplicação inspirada nos momentos de pandemia onde o mercado de Delivery tem aumentado significativamente.
-Você pode visualizar o projeto clicando [AQUI](https://F-Gabriel-Braga.github.io/pede-limpeza/).
+Você pode visualizar o projeto clicando [AQUI](https://gab-braga.github.io/pede-limpeza/).
 
 ## Tecnologias
 * ![HTML](https://img.shields.io/badge/HTML%205-orange?style=for-the-badge&logo=html5&logoColor=white)
@@ -22,4 +22,4 @@ Você pode visualizar o projeto clicando [AQUI](https://F-Gabriel-Braga.github.i
 ### MOBILE
 ![PEDE-LIMEPZA-MOBILE](https://user-images.githubusercontent.com/66652642/112738129-d50bd980-8f3e-11eb-88b4-8e9017c793ed.png)
 
-<h3 align=center>Se você gostou do projeto, não esquece de deixar sua estrelinha :star::wink:</h3>
+Se você gostou do projeto, não esquece de deixar sua estrelinha :star::wink:
